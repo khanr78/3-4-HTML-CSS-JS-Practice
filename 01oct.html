@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading" onmouseover="changeColor()" >This is heading</h1>
+    <button onclick="makeAlert()"> Click me</button>
+    <script src="./event.js"></script>
+</body>
+
+<script>
+function changeColor() {
+    const h1 = document.querySelector('#heading')
+h1.style.color = "red"
+}
+function makeAlert() {
+const h1 = document.querySelector('#heading')
+h1.innerHTML = "Hello, World!"
+}
+</script>
+</html>
